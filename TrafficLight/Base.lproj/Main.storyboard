@@ -37,22 +37,20 @@
                                     <constraint firstAttribute="width" constant="110" id="j1O-du-BzD"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-At-sl1">
-                                <rect key="frame" x="132" y="772" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-At-sl1">
+                                <rect key="frame" x="132" y="770" width="150" height="42"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="aSz-90-jQy"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ijx-wR-OuZ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDw-Ic-Ax6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -64,6 +62,12 @@
                             <constraint firstItem="GDL-At-sl1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plK-fP-Huv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="SGm-A4-whg" id="pwz-4z-c5K"/>
+                        <outlet property="redView" destination="ouS-5u-0sF" id="H07-Ht-wTU"/>
+                        <outlet property="startButton" destination="GDL-At-sl1" id="GNH-Rb-fkR"/>
+                        <outlet property="yellowView" destination="UjK-bG-1Ey" id="St9-x4-PDE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
